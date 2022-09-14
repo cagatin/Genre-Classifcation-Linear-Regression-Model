@@ -13,20 +13,24 @@ The dataset doesn’t contain all information about a song. For example, it does
 total number of words in each song, or information about the order of words in the song, let
 alone the melody, instruments, or rhythm.
 <br>
+<br>
 This dataset was extracted from the Million Song Dataset
 (http://labrosa.ee.columbia.edu/millionsong/). Specifically, we are using the complementary datasets from musiXmatch (http://labrosa.ee.columbia.edu/millionsong/musixmatch) and
 Last.fm (http://labrosa.ee.columbia.edu/millionsong/lastfm).
 <br>
+<br>
 The counts of common words in the lyrics for all of these songs are provided by the musiXmatch dataset (called a bag-of-words format). Only the top 5000 most common words are represented. For each song, we divided the number of occurrences of each word by the total number of
 word occurrences in the lyrics of that song.
+<br>
 <br>
 The Last.fm dataset contains multiple tags for each song in the Million Song Dataset. Some
 of the tags are genre-related, such as “pop”, “rock”, “classic”, etc. To obtain our dataset, we first
 extracted songs with Last.fm tags that included the words “country”, or “hip” and “hop”. 
 <br>
-These
-songs were then cross-referenced with the musiXmatch dataset, and only songs with musixMatch
+<br>
+These songs were then cross-referenced with the musiXmatch dataset, and only songs with musixMatch
 lyrics were placed into our dataset. 
+<br>
 <br>
 Finally, inappropriate words and songs with naughty titles
 were removed, leaving us with 4976 words in the vocabulary and 1726 songs.
